@@ -14,8 +14,7 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.jboss.as.plugins/jboss-as-maven-plugin -->
-<dependency>
+    <dependency>
     <groupId>org.jboss.as.plugins</groupId>
     <artifactId>jboss-as-maven-plugin</artifactId>
     <version>7.1.0.Final</version>
@@ -28,6 +27,22 @@
       <artifactId>maven-compiler-plugin</artifactId>
       <version>3.8.0</version>
     </plugin>
+    <plugin>
+    <groupId>org.jboss.as.plugins</groupId>
+    <artifactId>jboss-as-maven-plugin</artifactId>
+    <version>7.1.0</version>
+    <configuration>
+      <force>true</force>
+        <hostname>localhost</hostname>
+        <username>JBoss</username>
+        <password>Welcome*1</password>
+        <port>8050</port>
+        <finalNames>
+          <finalName>target/SampleWebApplication.war</finalName>
+        </finalNames>
+    </configuration>
+</plugin>
     </plugins>
   </build>
 </project>
+
