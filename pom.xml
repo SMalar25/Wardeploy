@@ -44,12 +44,18 @@
 </plugin>
     </plugins>
   </build>
-
       <repositories>
         <repository>
             <id>jboss-repo</id>
             <url>http://repository.jboss.org/nexus/content/groups/public/</url>
         </repository>
   </repositories>
+  <distributionManagement>
+    <snapshotRepository>
+      <id>__gwt_historyFrame</id>
+      <name>JBoss</name>
+      <url>http://localhost:9990/console/App.html#standalone-deployments/</url>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
 
