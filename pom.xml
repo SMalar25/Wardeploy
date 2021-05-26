@@ -45,11 +45,10 @@
     </plugins>
   </build>
   <distributionManagement>
-    <repository>
-      <id>jboss-as-maven-plugin</id>
-      <name>JBoss-as-maven-plugin</name>
-      <url>https://mvnrepository.com/artifact/org.jboss.as.plugins/jboss-as-maven-plugin</url>
-    </repository>
-  </distributionManagement>
+   <repository>
+            <id>jboss-repo</id>
+            <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+        </repository>
+   </distributionManagement>
 </project>
 
