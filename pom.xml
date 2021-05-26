@@ -14,30 +14,32 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-    <groupId>org.jboss.as.plugins</groupId>
-    <artifactId>jboss-as-maven-plugin</artifactId>
-    <version>7.1.0.Final</version>
-</dependency>
   </dependencies>
   <build>
     <finalName>SampleWebApplication</finalName>
+	  <pluginManagement>
     <plugins>
-   <plugin>
-      <artifactId>maven-compiler-plugin</artifactId>
-      <version>3.8.0</version>
-      </plugin>
-  <plugin>
+    <plugin>
 	  <groupId>org.jboss.as.plugins</groupId>
 	  <artifactId>jboss-as-maven-plugin</artifactId>
 	  <version>7.1.0.Final</version>
 	  <executions>
 		  <execution>
-			  <id>deploy</id>
-			  <phase>install</phase>
+			  <id>undeploy</id>
+			  <phase>clean</phase>
 			  <goals>
 				  <goal>deploy</goal>
 			  </goals>
+			  <configuration>
+				  <ignoreMissingDeployment>true</ignoreMissingDeployment>
+			  </configuration>
+		  </execution>
+		  <execution>
+			  <id>deploy</id>
+			  <phase>install</phase>
+			  <goals>
+                  		<goal>deploy</goal>
+                	  </goals>
 		  </execution>
 	  </executions>
 	  <configuration>
@@ -49,15 +51,15 @@
           <fileName>SampleWebApplication.war</fileName>  
       </fileNames>
     </configuration>
-</plugin>
+	    </plugin>
     </plugins>
+		  </pluginMnagement>
   </build>
   <distributionManagement>
       <repository>
       <id>jboss-as-maven-plugin</id>
       <name>JBoss-as-maven-plugin</name>
       <url>https://mvnrepository.com/artifact/org.jboss.as.plugins/jboss-as-maven-plugin</url>
-      <layout>default</layout>
     </repository>
    </distributionManagement>
 </project>
