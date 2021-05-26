@@ -48,25 +48,13 @@
 </plugin>
     </plugins>
   </build>
-  <repositories>
-        <repository>
-              <id>maven</id>
-              <name>Maven Repository</name>
-              <url>http://localhost:9990/console/App.html#standalone-deployments</url>
-        </repository>
-        <repository>
-              <id>SampleApp</id>
-              <name>SampleWebApplication</name>
-              <url>http://localhost:9990/console/App.html#standalone-deployments</url>
-        </repository>
-  </repositories>
   <distributionManagement>
     <repository>
       <uniqueVersion>false</uniqueVersion>
-      <id>__gwt_historyFrame</id>
-      <name>JBoss</name>
-      <url>http://localhost:9990/console/App.html#standalone-deployments</url>
-      <layout>default</layout>
+          <id>jboss-public-repository</id>
+          <name>JBoss Public Maven Repository Group</name>
+          <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+          <layout>default</layout>
     </repository>
 </distributionManagement>
 </project>
