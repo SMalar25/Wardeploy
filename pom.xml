@@ -45,11 +45,11 @@
     </plugins>
   </build>
   <distributionManagement>
-    <snapshotRepository>
-      <id>jboss-snapshots-repository</id>
-      <name>JBoss Snapshots Repository</name>
-      <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
-    </snapshotRepository>
+    <repository>
+      <id>jboss-as-maven-pluginy</id>
+      <name>JBoss-as-maven-plugin</name>
+      <url>https://mvnrepository.com/artifact/org.jboss.as.plugins/jboss-as-maven-plugin</url>
+    </repository>
   </distributionManagement>
 </project>
 
