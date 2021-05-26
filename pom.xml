@@ -28,29 +28,19 @@
       <version>3.8.0</version>
       </plugin>
   <plugin>
-						<groupId>org.jboss.as.plugins</groupId>
-						<artifactId>jboss-as-maven-plugin</artifactId>
-						<version>7.1.0.Final</version>
-						<executions>
-							<execution>
-								<id>undeploy</id>
-								<phase>clean</phase>
-								<goals>
-									<goal>undeploy</goal>
-								</goals>
-								<configuration>
-									<ignoreMissingDeployment>true</ignoreMissingDeployment>
-								</configuration>
-							</execution>
-							<execution>
-								<id>deploy</id>
-								<phase>install</phase>
-								<goals>
-									<goal>deploy</goal>
-								</goals>
-							</execution>
-						</executions>
-						<configuration>
+	  <groupId>org.jboss.as.plugins</groupId>
+	  <artifactId>jboss-as-maven-plugin</artifactId>
+	  <version>7.1.0.Final</version>
+	  <executions>
+		  <execution>
+			  <id>deploy</id>
+			  <phase>install</phase>
+			  <goals>
+				  <goal>deploy</goal>
+			  </goals>
+		  </execution>
+	  </executions>
+	  <configuration>
         <hostname>localhost</hostname>
         <username>JBoss</username>
         <password>Welcome*1</password>
