@@ -41,12 +41,21 @@
         <username>JBoss</username>
         <password>Welcome*1</password>
         <port>8050</port>
-        <finalNames>
-          <finalName>target/SampleWebApplication.war</finalName>
-        </finalNames>
+        <fileNames>
+          <fileName>target/SampleWebApplication.war</fileName>
+        </fileNames>
     </configuration>
 </plugin>
     </plugins>
   </build>
+  <distributionManagement>
+    <repository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>mvn1</id>
+      <name>Maven Repository</name>
+      <url>scp://repo/maven2</url>
+      <layout>default</layout>
+    </repository>
+</distributionManagement>
 </project>
 
