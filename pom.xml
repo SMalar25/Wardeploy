@@ -53,7 +53,7 @@
     </configuration>
 	    </plugin>
     </plugins>
-		  </pluginMnagement>
+		  </pluginManagement>
   </build>
   <distributionManagement>
       <repository>
