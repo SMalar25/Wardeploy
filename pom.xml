@@ -52,9 +52,9 @@
   </repositories>
   <distributionManagement>
     <snapshotRepository>
-      <id>__gwt_historyFrame</id>
-      <name>JBoss</name>
-      <url>http://localhost:9990/console/App.html#standalone-deployments/</url>
+      <id>jboss-snapshots-repository</id>
+      <name>JBoss Snapshots Repository</name>
+      <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
 </project>
