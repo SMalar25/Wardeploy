@@ -44,12 +44,6 @@
 </plugin>
     </plugins>
   </build>
-      <repositories>
-        <repository>
-            <id>jboss-repo</id>
-            <url>http://repository.jboss.org/nexus/content/groups/public/</url>
-        </repository>
-  </repositories>
   <distributionManagement>
     <snapshotRepository>
       <id>jboss-snapshots-repository</id>
