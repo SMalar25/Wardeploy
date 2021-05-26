@@ -37,9 +37,10 @@
         <username>JBoss</username>
         <password>Welcome*1</password>
         <port>9990</port>
+        <goal>deploy</goal>
         <fileNames>
-          <fileName>target/SampleWebApplication.war</fileName>
-        </fileNames>
+          <fileName>target/SampleWebApplication.war</fileName>  
+      </fileNames>
     </configuration>
 </plugin>
     </plugins>
