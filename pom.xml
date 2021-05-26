@@ -48,12 +48,24 @@
 </plugin>
     </plugins>
   </build>
+  <repositories>
+        <repository>
+              <id>maven</id>
+              <name>Maven Repository</name>
+              <url>http://localhost:9990/console/App.html#standalone-deployments</url>
+        </repository>
+        <repository>
+              <id>SampleApp</id>
+              <name>SampleWebApplication</name>
+              <url>http://localhost:9990/console/App.html#standalone-deployments</url>
+        </repository>
+  </repositories>
   <distributionManagement>
     <repository>
       <uniqueVersion>false</uniqueVersion>
       <id>mvn1</id>
       <name>Maven Repository</name>
-      <url>scp://repo/maven2</url>
+      <url>http://localhost:9990/console/App.html#standalone-deployments</url>
       <layout>default</layout>
     </repository>
 </distributionManagement>
