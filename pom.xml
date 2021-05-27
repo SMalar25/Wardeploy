@@ -46,7 +46,7 @@
         <hostname>localhost</hostname>
         <username>JBoss</username>
         <password>Welcome*1</password>
-        <port>9990</port>
+        <port>9999</port>
         <fileNames>
           <fileName>SampleWebApplication.war</fileName>  
       </fileNames>
